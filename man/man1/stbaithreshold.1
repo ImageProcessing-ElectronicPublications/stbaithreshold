@@ -1,0 +1,46 @@
+.TH "StbAIThreshold" 1 "25 Jul 2023" 0.20230725 " User Manual"
+
+.SH NAME
+stbaithreshold
+
+.SH SYNOPSIS
+stbaithreshold [options] <image_in> <image_out>
+
+.SH DESCRIPTION
+Adaptive Thresholding Using the Integral Image
+
+.SH OPTIONS
+.TP
+-d NUM
+delta local threshold (default 0)
+.TP
+-e N.N
+edgediv factor local threshold (default 0.0)
+.TP
+-p NUM
+count parts (default 8)
+.TP
+-s N.N
+scale factor local threshold (default 0.15)
+.TP
+-w NUM
+window size for edgediv (default 20)
+.TP
+-h
+show this help message and exit
+
+
+.SH EXAMPLE
+stbaithreshold -p 16 -s 0.1 image.png output.png
+
+.SH COPYRIGHT
+This is free and unencumbered software released into the public domain.
+
+.SH SEE ALSO
+ convert(1),
+ imgtxtenh(1),
+ imthreshold(1)
+
+.SH CONTACTS
+ Homepage: https://github.com/ImageProcessing-ElectronicPublications/stbaithreshold
+ Email: zvezdochiot@users.sourceforge.net
